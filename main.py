@@ -7,8 +7,8 @@ def int_to_roman(num):
     """
     # 1 -> I  5 -> V  10 -> X  50 -> L  100 -> C  500 -> D  1000 -> M
    
-    values = [1000, 500, 100, 50, 10, 5, 1]
-    letters = ["M", "D", "C", "L", "X", "V", "I"]
+    values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    letters = ["M", "DM", "D", "CD", "C", "LC", "L", "XL", "X", "IX", "V", "IV", "I"]
     
     roman = ""
     for i in range(len(values)):
@@ -18,5 +18,5 @@ def int_to_roman(num):
 
     return roman
 
-a = int_to_roman(1278)
+a = int_to_roman(3999)
 print(a)
