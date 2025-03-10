@@ -10,5 +10,9 @@ def int_to_roman(num):
     values = [1000, 500, 100, 50, 10, 5, 1]
     letters = ["M", "D", "C", "L", "X", "V", "I"]
     
+    roman = ""
     while num >= values:
         num = num - values[0]
+        roman.append(values)
+
+    return roman
