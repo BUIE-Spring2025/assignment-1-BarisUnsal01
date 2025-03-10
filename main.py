@@ -7,7 +7,8 @@ def int_to_roman(num):
     """
     # 1 -> I  5 -> V  10 -> X  50 -> L  100 -> C  500 -> D  1000 -> M
    
-    values = [1, 5, 10, 50, 100, 500, 1000]
-    letters = ["I", "V", "X", "L", "C", "D", "M"]
+    values = [1000, 500, 100, 50, 10, 5, 1]
+    letters = ["M", "D", "C", "L", "X", "V", "I"]
     
-    
+    while num >= values:
+        num = num - values[0]
