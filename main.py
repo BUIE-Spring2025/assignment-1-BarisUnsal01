@@ -14,9 +14,9 @@ def int_to_roman(num):
     for i in range(len(values)):
         while num >= values[i]:
             num = num - values[i]
-            roman.append(letters[i])
+            roman += letters[i]
 
     return roman
 
-a = int_to_roman(5)
+a = int_to_roman(1278)
 print(a)
